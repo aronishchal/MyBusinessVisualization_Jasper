@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MyBusinessVis" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31c5bd3e-7f1a-4ab1-b4e4-a617f592984c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyBusinessService"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="jasperadmin"/>
+	<property name="ireport.jasperserver.report.resource" value="/reports/MyBusinessVis_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/reports/MyBusinessVis"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="326"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="660"/>
+	<property name="net.sf.jasperreports.data.adapter" value="MyBusinessService.xml"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="lat" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="lat"/>
+		<fieldDescription><![CDATA[lat]]></fieldDescription>
+	</field>
+	<field name="lon" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="lon"/>
+		<fieldDescription><![CDATA[lon]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="address"/>
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<title>
+		<band height="376" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="10" width="555" height="366" uuid="fbb36477-0a3a-4763-98ce-94237b08671e"/>
+				<cvc:customvisualization xmlns:cvc="http://www.jaspersoft.com/cvcomponent" xsi:schemaLocation="http://www.jaspersoft.com/cvcomponent http://www.jaspersoft.com/cvcomponent/component.xsd" evaluationTime="Report">
+					<cvc:itemProperty name="script" value="MyBusinessVis.min.js"/>
+					<cvc:itemProperty name="module" value="MyBusinessVis"/>
+					<cvc:cvData>
+						<dataset resetType="Report"/>
+						<cvc:item>
+							<cvc:itemProperty name="lat">
+								<valueExpression><![CDATA[$F{lat}]]></valueExpression>
+							</cvc:itemProperty>
+							<cvc:itemProperty name="lon">
+								<valueExpression><![CDATA[$F{lon}]]></valueExpression>
+							</cvc:itemProperty>
+							<cvc:itemProperty name="name">
+								<valueExpression><![CDATA[$F{name}]]></valueExpression>
+							</cvc:itemProperty>
+						</cvc:item>
+					</cvc:cvData>
+				</cvc:customvisualization>
+			</componentElement>
+		</band>
+	</title>
+</jasperReport>
