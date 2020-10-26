@@ -39,11 +39,15 @@
 				<cvc:customvisualization xmlns:cvc="http://www.jaspersoft.com/cvcomponent" xsi:schemaLocation="http://www.jaspersoft.com/cvcomponent http://www.jaspersoft.com/cvcomponent/component.xsd" evaluationTime="Report">
 					<cvc:itemProperty name="script" value="MyBusinessVis.min.js"/>
 					<cvc:itemProperty name="module" value="MyBusinessVis"/>
+					<cvc:itemProperty name="css" value="MyBusinessVis.css"/>
 					<cvc:cvData>
 						<dataset resetType="Report"/>
 						<cvc:item>
 							<cvc:itemProperty name="lat">
 								<valueExpression><![CDATA[$F{lat}]]></valueExpression>
+							</cvc:itemProperty>
+							<cvc:itemProperty name="address">
+								<valueExpression><![CDATA[$F{address}]]></valueExpression>
 							</cvc:itemProperty>
 							<cvc:itemProperty name="lon">
 								<valueExpression><![CDATA[$F{lon}]]></valueExpression>
